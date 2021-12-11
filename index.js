@@ -54,10 +54,6 @@ module.exports = function (options) {
 		}
 
 		if (opts.background) {
-			if (!backgrounds) {
-				throw new Error('Manifest has no background property');
-			}
-
 			if (!Array.isArray(backgrounds)) {
 				backgrounds = new Array(backgrounds);
 			}
